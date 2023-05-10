@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./pages/index.css" />
+		<title>VK - Бронирование переговорной</title>
+	</head>
+	<body class="page">
+    <section class="section">
+
+ 
+		<div class="form__container">
+			<h2 class="form__title">Бронирование переговорной</h2>
+
+			<form id="booking-form" class="form">
+				<div class="form__group">
+					<label for="tower-select" class="form__label">Выбор башни:</label>
+					<select id="tower-select" class="form__select">
+						<option value="" selected>-- Выберите башню --</option>
+					</select>
+				</div>
+
+				<div class="form__group">
+					<label for="floor-select" class="form__label">Выбор этажа:</label>
+					<select id="floor-select" class="form__select">
+						<option value="" selected>-- Выберите этаж --</option>
+					</select>
+				</div>
+
+				<div class="form__group">
+					<label for="room-select" class="form__label"
+						>Выберите переговорную:</label
+					>
+					<select id="room-select" class="form__select">
+						<option value="" selected>-- Выберите переговорную --</option>
+					</select>
+				</div>
+
+				<div class="form__group">
+					<label for="date-input" class="form__label"
+						>Выберите дату начала бронирования:</label
+					>
+					<input type="date" id="date-input" class="form__input" />
+				</div>
+
+				<div class="form__group">
+					<label for="start-time-select" class="form__label"
+						>Выберите время начала бронирования:</label
+					>
+					<select id="start-time-select" class="form__select">
+						<option value="" selected>-- Выберите время --</option>
+					</select>
+				</div>
+
+				<div class="form__group">
+					<label for="end-time-select" class="form__label"
+						>Время окончания бронирования:</label
+					>
+					<select id="end-time-select" class="form__select">
+						<option value="" selected>-- Выберите время --</option>
+					</select>
+				</div>
+
+				<div class="form__group">
+					<label for="comment-input" class="form__label">Комментарий:</label>
+					<textarea id="comment-input" class="form__textarea"></textarea>
+				</div>
+				<div class="form__group">
+					<button type="submit" id="submit-button" class="form__submit-button">
+						Отправить
+					</button>
+					<button type="button" id="clear-button" class="form__clear-button">
+						Очистить
+					</button>
+				</div>
+			</form>
+      
+		</div>
+  </section>
+	</body>
+	<script src="./pages/index.js"></script>
+</html>
