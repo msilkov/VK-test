@@ -1,4 +1,4 @@
-// Получаем элементы формы и поля ввода
+
 const form = document.getElementById('booking-form');
 const roomSelect = document.getElementById('room-select');
 const dateInput = document.getElementById('date-input');
@@ -14,6 +14,8 @@ const endTimeSelect = document.getElementById('end-time-select');
 const durationSpan = document.getElementById('duration-span');
 const clearButton = document.getElementById('clear-button');
 const towerSelect = document.getElementById('tower-select');
+const floorSelect = document.getElementById('floor-select');
+
 const towerOptions = [
 	{ value: 'A', label: 'Башня А' },
 	{ value: 'B', label: 'Башня Б' },
@@ -26,7 +28,6 @@ for (const option of towerOptions) {
 	towerSelect.appendChild(optionEl);
 }
 
-const floorSelect = document.getElementById('floor-select');
 for (let i = 3; i <= 27; i++) {
 	const option = document.createElement('option');
 	option.value = i;
